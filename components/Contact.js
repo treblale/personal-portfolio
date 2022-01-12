@@ -6,14 +6,19 @@ import { FaTelegramPlane } from "react-icons/fa";
 const Contact = () => {
   return (
     <Section>
-      <div className="w-full min-h-screen flex flex-col justify-center items-center relative">
-        <FaTelegramPlane className="text-white outline-primary text-6xl mb-4" />
-        <h1 className="text-primary text-6xl font-bold">Get In Touch</h1>
-        <p className="text-white mt-2">
+      <div
+        name="Contact"
+        className="w-full min-h-screen flex flex-col justify-center items-center relative"
+      >
+        <FaTelegramPlane className="text-primary text-6xl mb-4" />
+        <h1 className="text-white text-6xl font-bold">Get In Touch</h1>
+        <p className="text-white/50 mt-2 mb-12">
           Shoot me an email! I am always open to new opprotunities.
         </p>
-        <div className="text-sm text-primary rounded-md flex justify-center items-center font-bold uppercase py-3 px-12 cursor-pointer border-2 border-primary mt-12 mb-16 hover:bg-primary/10">
-          <p>Contact</p>
+        <div className="border-white/20 border px-12 py-3 rounded-full cursor-pointer hover:bg-primary/10">
+          <div className="text-sm font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-300 to-purple-400">
+            Say Hello
+          </div>
         </div>
       </div>
     </Section>

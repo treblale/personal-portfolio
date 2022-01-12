@@ -8,7 +8,7 @@ const Main = ({ children }) => {
         <title>Albert Le</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div>
+      <div className="">
         <Navbar />
         <div>{children}</div>
       </div>

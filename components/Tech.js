@@ -12,37 +12,35 @@ import {
 const Tech = () => {
   return (
     <Section>
-      <div className="w-full h-96 flex flex-col justify-center items-center relative">
-        <div className="flex flex-col justify-center items-center">
-          <h1 className="font-bold text-primary text-6xl text-center mb-2">
+      <div className="w-full h-fit flex flex-col justify-center items-center relative">
+        <div className="flex flex-col justify-center items-center ">
+          <h1 className="font-bold text-white text-6xl text-center mb-2">
             Tech Stack
           </h1>
-          <p className="text-white mb-12 ">
+          <p className="text-white/50 mb-12 ">
             Recent technologies that I have learned and used.
           </p>
-          <div className="w-full flex flex-row justify-center items-center space-x-4 mb-4">
-            <div className="bg-primary rounded-md py-4 px-8">
-              <SiStyledcomponents className="text-black text-6xl" />
+          <div className="w-full flex flex-row justify-center items-center space-x-12 mb-4">
+            <div className="rounded-full p-6 hover:bg-light hover:shadow-lg hover:scale-110 transition-all group">
+              <SiStyledcomponents className="text-light text-5xl group-hover:text-primary" />
             </div>
-            <div className="bg-primary rounded-md py-4 px-8">
-              <SiGraphql className="text-black text-6xl" />
+            <div className="rounded-full p-6 hover:bg-light hover:shadow-lg hover:scale-110 transition-all group">
+              <SiGraphql className="text-light text-5xl group-hover:text-primary" />
             </div>
-            <div className="bg-primary rounded-md py-4 px-8">
-              <SiApollographql className="text-black text-6xl" />
+            <div className="rounded-full p-6 hover:bg-light hover:shadow-lg hover:scale-110 transition-all group">
+              <SiApollographql className="text-light text-5xl group-hover:text-primary" />
             </div>
-          </div>
-          <div className="w-full flex flex-row justify-center items-center space-x-4">
-            <div className="bg-primary rounded-md py-4 px-8">
-              <FaReact className="text-black text-6xl" />
+            <div className="rounded-full p-6 hover:bg-light hover:shadow-lg hover:scale-110 transition-all group">
+              <FaReact className="text-light text-5xl group-hover:text-primary" />
             </div>
-            <div className="bg-primary rounded-md py-4 px-8">
-              <FaHtml5 className="text-black text-6xl" />
+            <div className="rounded-full p-6 hover:bg-light hover:shadow-lg hover:scale-110 transition-all group">
+              <FaHtml5 className="text-light text-5xl group-hover:text-primary" />
             </div>
-            <div className="bg-primary rounded-md py-4 px-8">
-              <SiTailwindcss className="text-black text-6xl" />
+            <div className="rounded-full p-6 hover:bg-light hover:shadow-lg hover:scale-110 transition-all group">
+              <SiTailwindcss className="text-light text-5xl group-hover:text-primary" />
             </div>
-            <div className="bg-primary rounded-md py-4 px-8">
-              <SiNextdotjs className="text-black text-6xl" />
+            <div className="rounded-full p-6 hover:bg-light hover:shadow-lg hover:scale-110 transition-all group">
+              <SiNextdotjs className="text-light text-5xl group-hover:text-primary" />
             </div>
           </div>
         </div>
