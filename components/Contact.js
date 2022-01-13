@@ -15,7 +15,7 @@ const Contact = () => {
         <p className="text-white/50 mt-2 mb-12">
           Shoot me an email! I am always open to new opprotunities.
         </p>
-        <div className="border-white/20 border px-12 py-3 rounded-full cursor-pointer hover:bg-primary/10">
+        <div className="border-white/20 border px-12 py-3 rounded-full cursor-pointer hover:bg-white/10">
           <div className="text-sm font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-300 to-purple-400">
             Say Hello
           </div>

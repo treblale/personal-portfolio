@@ -5,6 +5,7 @@ import Main from "../components/layouts/Main";
 import Navbar from "../components/Navbar";
 import Tech from "../components/Tech";
 import Top from "../components/UI/Top";
+import Work from "../components/Work";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <Hero />
         <About />
         <Tech />
+        <Work />
         <Contact />
         {/* <Top /> */}
       </Main>
