@@ -8,11 +8,13 @@ const Contact = () => {
     <Section>
       <div
         name="Contact"
-        className="w-full min-h-screen flex flex-col justify-center items-center relative"
+        className="w-full min-h-screen flex flex-col justify-center items-center relative px-16 lg:px-0"
       >
-        <FaTelegramPlane className="text-primary text-6xl mb-4" />
-        <h1 className="text-white text-6xl font-bold">Get In Touch</h1>
-        <p className="text-white/50 mt-2 mb-12">
+        <FaTelegramPlane className="text-primary text-4xl lg:text-6xl mb-4" />
+        <h1 className="text-white text-4xl lg:text-6xl font-bold">
+          Get In Touch
+        </h1>
+        <p className="text-white/50 mt-2 mb-8 text-xs text-center lg:text-base lg:mb-12">
           Shoot me an email! I am always open to new opprotunities.
         </p>
         <div className="border-white/20 border px-12 py-3 rounded-full cursor-pointer hover:bg-white/10">

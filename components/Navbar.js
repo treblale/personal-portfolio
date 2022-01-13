@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Button from "./UI/Button";
 import { FiGithub, FiMail, FiLinkedin } from "react-icons/fi";
+import { FaBars } from "react-icons/fa";
 import { Link } from "react-scroll";
 
 const Navbar = () => {
@@ -20,7 +21,7 @@ const Navbar = () => {
 
   const bg = navbar ? "backdrop-blur-xl" : "bg-transparent";
   const always =
-    "absolute w-full h-min-screen flex flex-row justify-between items-center py-8 px-32 z-50 transition-all";
+    "absolute w-full h-min-screen flex flex-row justify-between items-center px-16 py-8 lg:px-32 z-50 transition-all";
 
   return (
     <>
@@ -28,7 +29,10 @@ const Navbar = () => {
         <div className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-300 to-purple-400 font-black text-4xl">
           A
         </div>
-        <div className="flex flex-row justify-center items-center space-x-10">
+        <div className="lg:hidden cursor-pointer">
+          <FaBars className="text-white" />
+        </div>
+        <div className="hidden flex-row justify-center items-center space-x-10 lg:flex">
           <ul className="space-x-10 text-secondary text-sm">
             <li className="inline">
               <Link
@@ -73,7 +77,7 @@ const Navbar = () => {
           <Button text="Resume" />
         </div>
       </div>
-      <div className="fixed left-12 bottom-12 flex flex-col justify-center items-center space-y-8 z-50">
+      <div className="hidden lg:flex fixed left-12 bottom-12 flex-col justify-center items-center space-y-8 z-50">
         <div className="p-2 rounded-full cursor-pointer group">
           <FiGithub className="text-secondary text-xl group-hover:text-white/50" />
         </div>
