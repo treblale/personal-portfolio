@@ -3,9 +3,15 @@ import Button from "./UI/Button";
 import { FiGithub, FiMail, FiLinkedin } from "react-icons/fi";
 import { FaBars } from "react-icons/fa";
 import { Link } from "react-scroll";
+import Sidebar from "./UI/Sidebar";
 
 const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
+  const [sidebar, setSidebar] = useState(false);
+
+  const sidebarHandler = () => {
+    setSidebar(!sidebar);
+  };
 
   // const changeNavbar = () => {
   //   if (window.scrollY >= 150) {
@@ -20,19 +26,32 @@ const Navbar = () => {
   // }, []);
 
   const bg = navbar ? "backdrop-blur-xl" : "bg-transparent";
+  const side = sidebar ? "fixed" : "absolute";
   const always =
-    "absolute w-full h-min-screen flex flex-row justify-between items-center px-16 py-8 lg:px-32 z-50 transition-all";
+    "w-full h-min-screen flex flex-row justify-between items-center px-16 py-8 lg:px-32 z-50 transition-all overflow-hidden";
+
+  const animate1 = sidebar ? "rotate-45 translate-y-1.5" : "";
+  const animate2 = sidebar ? "-rotate-45 -translate-y-1" : "";
 
   return (
     <>
-      <div className={`${bg} ${always}`}>
+      <Sidebar open={sidebar} setOpen={setSidebar} />
+      <div className={`${bg} ${always} ${side}`}>
         <div className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-300 to-purple-400 font-black text-4xl">
           A
         </div>
-        <div className="lg:hidden cursor-pointer">
-          <FaBars className="text-white" />
+        <div
+          className="lg:hidden cursor-pointer flex flex-col justify-center items-center space-y-2"
+          onClick={() => sidebarHandler()}
+        >
+          <div
+            className={`${animate1} bg-white w-6 h-[2px] transition duration-300 ease-in`}
+          />
+          <div
+            className={`${animate2} bg-white w-6 h-[2px] transition duration-300 ease-in`}
+          />
         </div>
-        <div className="hidden flex-row justify-center items-center space-x-10 lg:flex">
+        <div className="hidden flex-row justify-center items-center space-x-10 lg:flex selection:bg-primary selection:text-black">
           <ul className="space-x-10 text-secondary text-sm">
             <li className="inline">
               <Link
@@ -78,15 +97,30 @@ const Navbar = () => {
         </div>
       </div>
       <div className="hidden lg:flex fixed left-12 bottom-12 flex-col justify-center items-center space-y-8 z-50">
-        <div className="p-2 rounded-full cursor-pointer group">
+        <a
+          className="p-2 rounded-full cursor-pointer group"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://github.com/treblale"
+        >
           <FiGithub className="text-secondary text-xl group-hover:text-white/50" />
-        </div>
-        <div className="p-2 rounded-full cursor-pointer group">
+        </a>
+        <a
+          className="p-2 rounded-full cursor-pointer group"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://linkedin.com/"
+        >
           <FiLinkedin className="text-secondary text-xl  group-hover:text-white/50" />
-        </div>
-        <div className="p-2 rounded-full cursor-pointer group">
+        </a>
+        <a
+          className="p-2 rounded-full cursor-pointer group"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="mailto:albertphongle@gmail.com"
+        >
           <FiMail className="text-secondary text-xl  group-hover:text-white/50" />
-        </div>
+        </a>
       </div>
     </>
   );

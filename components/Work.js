@@ -37,11 +37,11 @@ const Work = () => {
         name="Work"
         className="w-full min-h-screen flex flex-col justify-start items-center relative"
       >
-        <div className="flex w-full flex-col justify-center items-center lg:px-64 my-16 lg:my-32">
+        <div className="flex w-full flex-col justify-center items-center lg:px-64 my-32">
           <h1 className="font-bold text-white text-4xl lg:text-6xl mb-8 lg:mb-12">
             Work
           </h1>
-          <div className="w-full h-fit lg:h-[28rem] flex flex-col lg:flex-row justify-betweem items-center mb-4 lg:mb-8 lg:space-x-8 space-y-4 lg:space-y-0">
+          <div className="w-full h-fit lg:h-[28rem] flex flex-col lg:flex-row justify-center items-center mb-4 lg:mb-8 lg:space-x-8 space-y-4 lg:space-y-0">
             <Project
               sub="Non-fungible Token"
               header="Haywire Wolves"
@@ -55,7 +55,7 @@ const Work = () => {
               img="/images/enigma.jpeg"
             />
           </div>
-          <div className="w-full h-fit lg:h-[28rem] flex flex-col lg:flex-row justify-between items-center space-y-4 lg:space-y-0">
+          <div className="w-full h-fit lg:h-[28rem] flex flex-col lg:flex-row justify-center items-center lg:space-x-8 space-y-4 lg:space-y-0">
             <Project
               sub="Web3 Game"
               header="Monke"

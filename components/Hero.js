@@ -13,9 +13,9 @@ const Hero = () => {
           <h1 className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-300 to-purple-400 text-5xl lg:text-9xl ">
             Albert Le
           </h1>
-          <h2 className="text-white/50 text-xs lg:text-xl tracking mb-8 lg:mb-12">
+          <h1 className="text-white/50 text-xs lg:text-xl tracking mb-8 lg:mb-12">
             Software Engineer & Fullstack Developer
-          </h2>
+          </h1>
           <div className="bg-gradient-to-r from-indigo-300 to-purple-400 rounded-full flex justify-center font-bold items-center text-black text-sm py-3 px-8 lg:py-3 lg:px-12 cursor-pointer mb-4 hover:scale-90 group hover:bg-white/50 transition ease-in duration-300 shadow-sm">
             <p>View Resume</p>
           </div>
