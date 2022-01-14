@@ -1,16 +1,23 @@
 import React, { useEffect, useState } from "react";
 import Button from "./UI/Button";
 import { FiGithub, FiMail, FiLinkedin } from "react-icons/fi";
-import { FaBars } from "react-icons/fa";
+import { FiCopy } from "react-icons/fi";
 import { Link } from "react-scroll";
 import Sidebar from "./UI/Sidebar";
+import Message from "./UI/Message";
 
 const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
   const [sidebar, setSidebar] = useState(false);
+  const [message, setMessage] = useState(false);
 
   const sidebarHandler = () => {
     setSidebar(!sidebar);
+  };
+
+  const copyCliboard = () => {
+    navigator.clipboard.writeText("albertphongle@gmail.com");
+    setMessage(true);
   };
 
   // const changeNavbar = () => {
@@ -36,6 +43,12 @@ const Navbar = () => {
   return (
     <>
       <Sidebar open={sidebar} setOpen={setSidebar} />
+      <Message
+        text="Copied to clipboard"
+        icon={<FiCopy />}
+        open={message}
+        set={setMessage}
+      />
       <div className={`${bg} ${always} ${side}`}>
         <div className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-300 to-purple-400 font-black text-4xl">
           A
@@ -96,7 +109,7 @@ const Navbar = () => {
           <Button text="Resume" />
         </div>
       </div>
-      <div className="hidden lg:flex fixed left-12 bottom-12 flex-col justify-center items-center space-y-8 z-50">
+      <div className="hidden lg:flex fixed left-12 bottom-12 flex-col justify-center items-start space-y-8 z-50">
         <a
           className="p-2 rounded-full cursor-pointer group"
           target="_blank"
@@ -114,12 +127,13 @@ const Navbar = () => {
           <FiLinkedin className="text-secondary text-xl  group-hover:text-white/50" />
         </a>
         <a
-          className="p-2 rounded-full cursor-pointer group"
-          target="_blank"
-          rel="noopener noreferrer"
-          href="mailto:albertphongle@gmail.com"
+          className="p-2 rounded-full cursor-pointer flex flex-row justify-center items-center relative hover:border-white/10 border-transparent border-[1px] group space-x-2"
+          onClick={() => copyCliboard()}
         >
           <FiMail className="text-secondary text-xl  group-hover:text-white/50" />
+          <p className="top-2.5 left-10 text-xs text-white hidden group-hover:inline">
+            albertphongle@gmail.com
+          </p>
         </a>
       </div>
     </>

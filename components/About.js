@@ -14,7 +14,7 @@ const About = () => {
     <Section>
       <div
         name="About"
-        className="w-full min-h-screen flex flex-row justify-center lg:justify-between items-center relative px-16 lg:px-64"
+        className="w-full min-h-screen flex flex-row justify-center items-center relative px-16 lg:space-x-32"
       >
         <div className="flex flex-col justify-start items-start w-[26rem] rounded-md ">
           <h1 className="font-bold text-white text-4xl lg:text-6xl mb-4">
