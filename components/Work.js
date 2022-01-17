@@ -57,17 +57,12 @@ const Work = () => {
           </div>
           <div className="w-full h-fit lg:h-[28rem] flex flex-col lg:flex-row justify-center items-center lg:space-x-8 space-y-4 lg:space-y-0">
             <Project
-              sub="Web3 Game"
-              header="Monke"
-              desc="Agile development teams for Web3 projects."
-              locked
+              sub="Web3 App"
+              header="Good Morning"
+              desc="Good Morning chat application that implements Web3 wallets."
+              img="/images/gm.png"
             />
-            <Project
-              sub="Web3 Game"
-              header="Monke"
-              desc="Agile development teams for Web3 projects."
-              locked
-            />
+            <Project sub="Web3 Game" header="Monke" locked />
           </div>
         </div>
       </div>
