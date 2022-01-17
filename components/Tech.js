@@ -7,6 +7,8 @@ import {
   SiStyledcomponents,
   SiGraphql,
   SiApollographql,
+  SiJava,
+  SiJavascript,
 } from "react-icons/si";
 
 const Tech = () => {
@@ -22,17 +24,17 @@ const Tech = () => {
           </p>
           <div className="w-full flex flex-wrap lg:flex-nowrap lg:flex-row justify-center items-center lg:space-x-12 mb-4">
             <div className="rounded-full p-6 hover:bg-light hover:shadow-lg hover:scale-110 transition-all group">
-              <SiStyledcomponents className="text-white/50 lg:text-5xl text-4xl group-hover:text-primary" />
+              <SiJava className="text-white/50 lg:text-5xl text-4xl group-hover:text-primary" />
             </div>
             <div className="rounded-full p-6 hover:bg-light hover:shadow-lg hover:scale-110 transition-all group">
-              <SiGraphql className="text-white/50 lg:text-5xl text-4xl group-hover:text-primary" />
-            </div>
-            <div className="rounded-full p-6 hover:bg-light hover:shadow-lg hover:scale-110 transition-all group">
-              <SiApollographql className="text-white/50 lg:text-5xl text-4xl group-hover:text-primary" />
+              <SiJavascript className="text-white/50 lg:text-5xl text-4xl group-hover:text-primary" />
             </div>
             <div className="w-full lg:hidden"></div>
             <div className="rounded-full p-6 hover:bg-light hover:shadow-lg hover:scale-110 transition-all group">
               <FaReact className="text-white/50 lg:text-5xl text-4xl group-hover:text-primary" />
+            </div>
+            <div className="rounded-full p-6 hover:bg-light hover:shadow-lg hover:scale-110 transition-all group">
+              <SiNextdotjs className="text-white/50 lg:text-5xl text-4xl group-hover:text-primary" />
             </div>
             <div className="rounded-full p-6 hover:bg-light hover:shadow-lg hover:scale-110 transition-all group">
               <FaHtml5 className="text-white/50 lg:text-5xl text-4xl group-hover:text-primary" />
@@ -40,8 +42,9 @@ const Tech = () => {
             <div className="rounded-full p-6 hover:bg-light hover:shadow-lg hover:scale-110 transition-all group">
               <SiTailwindcss className="text-white/50 lg:text-5xl text-4xl group-hover:text-primary" />
             </div>
+
             <div className="rounded-full p-6 hover:bg-light hover:shadow-lg hover:scale-110 transition-all group">
-              <SiNextdotjs className="text-white/50 lg:text-5xl text-4xl group-hover:text-primary" />
+              <SiStyledcomponents className="text-white/50 lg:text-5xl text-4xl group-hover:text-primary" />
             </div>
           </div>
         </div>
