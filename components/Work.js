@@ -2,7 +2,7 @@ import React from "react";
 import Section from "./Section";
 import { IoIosLock } from "react-icons/io";
 
-const Project = ({ sub, header, desc, img, locked }) => {
+const Project = ({ sub, header, desc, img, locked, stack }) => {
   return (
     <div
       className={`${
@@ -26,6 +26,15 @@ const Project = ({ sub, header, desc, img, locked }) => {
       ) : (
         <img className="object-cover rounded-lg shadow-lg" src={img} alt="" />
       )}
+      <div className="w-full flex-row flex space-x-2 items-center justify-start mt-4">
+        {stack.map((tech) => {
+          return (
+            <div className="text-white/80 w-fit p-2 rounded-md bg-light text-xs">
+              {tech}
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 };
@@ -47,12 +56,14 @@ const Work = () => {
               header="Haywire Wolves"
               desc="5,555 unique characters stored on the Ethereum blockchain."
               img="/images/top.jpeg"
+              stack={["react", "next", "tailwindcss", "solidity"]}
             />
             <Project
               sub="Team Portfolio"
               header="Enigma Labs"
               desc="Agile development teams for Web3 projects."
               img="/images/enigma.jpeg"
+              stack={["react", "next", "tailwindcss"]}
             />
           </div>
           <div className="w-full h-fit lg:h-[28rem] flex flex-col lg:flex-row justify-center items-center lg:space-x-8 space-y-4 lg:space-y-0">
@@ -61,8 +72,9 @@ const Work = () => {
               header="Good Morning"
               desc="Good Morning chat application that implements Web3 wallets."
               img="/images/gm.png"
+              stack={["react", "next", "tailwindcss", "moralis"]}
             />
-            <Project sub="Web3 Game" header="Monke" locked />
+            <Project sub="Web3 Game" header="" locked stack={[]} />
           </div>
         </div>
       </div>
