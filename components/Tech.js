@@ -42,7 +42,6 @@ const Tech = () => {
             <div className="rounded-full p-6 hover:bg-light hover:shadow-lg hover:scale-110 transition-all group">
               <SiTailwindcss className="text-white/50 lg:text-5xl text-4xl group-hover:text-primary" />
             </div>
-
             <div className="rounded-full p-6 hover:bg-light hover:shadow-lg hover:scale-110 transition-all group">
               <SiStyledcomponents className="text-white/50 lg:text-5xl text-4xl group-hover:text-primary" />
             </div>

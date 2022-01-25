@@ -2,9 +2,12 @@ import React from "react";
 import Section from "./Section";
 import { IoIosLock } from "react-icons/io";
 
-const Project = ({ sub, header, desc, img, locked, stack }) => {
+const Project = ({ sub, header, desc, img, locked, url, stack }) => {
   return (
-    <div
+    <a
+      href={url}
+      target="_blank"
+      rel="noopener noreferrer"
       className={`${
         locked
           ? "w-80 lg:w-[28rem] h-full flex flex-col justify-center items-start border-2 border-light p-8 rounded-lg hover:bg-white/10 hover:border-primary/50 lg:hover:shadow-lg  lg:hover:-translate-y-2 transition duration-300 ease-in cursor-not-allowed"
@@ -35,7 +38,7 @@ const Project = ({ sub, header, desc, img, locked, stack }) => {
           );
         })}
       </div>
-    </div>
+    </a>
   );
 };
 
@@ -50,12 +53,13 @@ const Work = () => {
           <h1 className="font-bold text-white text-4xl lg:text-6xl mb-8 lg:mb-12">
             Work
           </h1>
-          <div className="w-full h-fit lg:h-[28rem] flex flex-col lg:flex-row justify-center items-center mb-4 lg:mb-8 lg:space-x-8 space-y-4 lg:space-y-0">
+          <div className="w-full h-fit lg:h-[28rem] flex flex-col lg:flex-row justify-center items-center lg:space-x-8 space-y-4 lg:space-y-0 mb-4 lg:mb-8">
             <Project
               sub="Non-fungible Token"
               header="Haywire Wolves"
               desc="5,555 unique characters stored on the Ethereum blockchain."
               img="/images/top.jpeg"
+              url="https://haywire-web.vercel.app/"
               stack={["react", "next", "tailwindcss", "solidity"]}
             />
             <Project
@@ -63,17 +67,29 @@ const Work = () => {
               header="Enigma Labs"
               desc="Agile development teams for Web3 projects."
               img="/images/enigma.jpeg"
+              url="https://enigma-portfolio.vercel.app/"
               stack={["react", "next", "tailwindcss"]}
             />
           </div>
-          <div className="w-full h-fit lg:h-[28rem] flex flex-col lg:flex-row justify-center items-center lg:space-x-8 space-y-4 lg:space-y-0">
+          <div className="w-full h-fit lg:h-[28rem] flex flex-col lg:flex-row justify-center items-center lg:space-x-8 space-y-4 lg:space-y-0 mb-4 lg:mb-8">
             <Project
               sub="Web3 App"
               header="Good Morning"
               desc="Good Morning chat application that implements Web3 wallets."
               img="/images/gm.png"
+              url="https://goodmorning-rouge.vercel.app/"
               stack={["react", "next", "tailwindcss", "moralis"]}
             />
+            <Project
+              sub="Gallery"
+              header="Rick & Morty Gallery"
+              desc="Gallery of all characters from the TV series, Rick and Morty."
+              img="/images/rick.jpeg"
+              url="https://enigma-portfolio.vercel.app/"
+              stack={["next", "tailwindcss", "apollo", "zustand"]}
+            />
+          </div>
+          <div className="w-full h-fit lg:h-[28rem] flex flex-col lg:flex-row justify-center items-center lg:space-x-8 space-y-4 lg:space-y-0">
             <Project sub="Web3 Game" header="" locked stack={[]} />
           </div>
         </div>
