@@ -5,8 +5,20 @@ import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 const Project = ({ sub, header, desc, img, locked, url, stack, id }) => {
+  const items = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.1,
+      },
+    },
+  };
+
   return (
-    <a
+    <motion.a
+      variants={items}
       key={id}
       href={url}
       target="_blank"
@@ -41,7 +53,7 @@ const Project = ({ sub, header, desc, img, locked, url, stack, id }) => {
           );
         })}
       </div>
-    </a>
+    </motion.a>
   );
 };
 
@@ -60,7 +72,12 @@ const Work = () => {
     visible: {
       y: 0,
       opacity: 1,
-      transition: { delay: 0.2, duration: 0.5 },
+      transition: {
+        delay: 0.2,
+        duration: 0.5,
+        delayChildren: 0.3,
+        staggerChildren: 0.3,
+      },
     },
   };
 
@@ -70,7 +87,13 @@ const Work = () => {
         name="Work"
         className="w-full min-h-screen flex flex-col justify-start items-center relative"
       >
-        <div className="flex w-full flex-col justify-center items-center lg:px-64 my-32">
+        <motion.div
+          className="flex w-full flex-col justify-center items-center lg:px-64 my-32"
+          variants={container}
+          ref={ref}
+          initial="hidden"
+          animate={controls}
+        >
           <div className="overflow-hidden h-fit mb-8 lg:mb-12">
             <motion.h1
               className="font-bold text-white text-4xl lg:text-6xl"
@@ -125,7 +148,7 @@ const Work = () => {
           <div className="w-full h-fit lg:h-[28rem] flex flex-col lg:flex-row justify-center items-center lg:space-x-8 space-y-4 lg:space-y-0">
             <Project sub="Web3 Game" header="" locked stack={[]} id="5" />
           </div>
-        </div>
+        </motion.div>
       </div>
     </Section>
   );
