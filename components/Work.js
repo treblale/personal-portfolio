@@ -98,7 +98,6 @@ const Work = () => {
             <motion.h1
               className="font-bold text-white text-4xl lg:text-6xl"
               variants={container}
-              ref={ref}
               initial="hidden"
               animate={controls}
             >

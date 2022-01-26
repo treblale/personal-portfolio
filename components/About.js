@@ -51,11 +51,10 @@ const About = () => {
         className="w-full min-h-screen flex flex-row justify-center items-center relative px-16 lg:space-x-32"
       >
         <div className="flex flex-col justify-start items-start w-[26rem] rounded-md ">
-          <div className="overflow-hidden h-fit mb-4">
+          <div className="overflow-hidden h-fit mb-4 w-full" ref={ref}>
             <motion.h1
               className="font-bold text-white text-4xl lg:text-6xl"
               variants={container}
-              ref={ref}
               initial="hidden"
               animate={controls}
             >

@@ -32,11 +32,10 @@ const Contact = () => {
         className="w-full min-h-screen flex flex-col justify-center items-center relative px-16 lg:px-0  selection:bg-primary selection:text-black"
       >
         <FaTelegramPlane className="text-primary text-4xl lg:text-6xl mb-4" />
-        <div className="overflow-hidden h-fit">
+        <div className="overflow-hidden h-fit w-full text-center" ref={ref}>
           <motion.h1
             className="text-white text-4xl lg:text-6xl font-bold"
             variants={container}
-            ref={ref}
             initial="hidden"
             animate={controls}
           >
