@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Section from "./Section";
 import { IoIosLock } from "react-icons/io";
+import { useAnimation, motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
-const Project = ({ sub, header, desc, img, locked, url, stack }) => {
+const Project = ({ sub, header, desc, img, locked, url, stack, id }) => {
   return (
     <a
+      key={id}
       href={url}
       target="_blank"
       rel="noopener noreferrer"
@@ -43,6 +46,24 @@ const Project = ({ sub, header, desc, img, locked, url, stack }) => {
 };
 
 const Work = () => {
+  const controls = useAnimation();
+  const [ref, inView] = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
+
+  const container = {
+    hidden: { y: 50, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: { delay: 0.2, duration: 0.5 },
+    },
+  };
+
   return (
     <Section>
       <div
@@ -50,9 +71,17 @@ const Work = () => {
         className="w-full min-h-screen flex flex-col justify-start items-center relative"
       >
         <div className="flex w-full flex-col justify-center items-center lg:px-64 my-32">
-          <h1 className="font-bold text-white text-4xl lg:text-6xl mb-8 lg:mb-12">
-            Work
-          </h1>
+          <div className="overflow-hidden h-fit mb-8 lg:mb-12">
+            <motion.h1
+              className="font-bold text-white text-4xl lg:text-6xl"
+              variants={container}
+              ref={ref}
+              initial="hidden"
+              animate={controls}
+            >
+              Work
+            </motion.h1>
+          </div>
           <div className="w-full h-fit lg:h-[28rem] flex flex-col lg:flex-row justify-center items-center lg:space-x-8 space-y-4 lg:space-y-0 mb-4 lg:mb-8">
             <Project
               sub="Non-fungible Token"
@@ -61,6 +90,7 @@ const Work = () => {
               img="/images/top.jpeg"
               url="https://haywire-web.vercel.app/"
               stack={["react", "next", "tailwindcss", "solidity"]}
+              id="1"
             />
             <Project
               sub="Team Portfolio"
@@ -69,6 +99,7 @@ const Work = () => {
               img="/images/enigma.jpeg"
               url="https://enigma-portfolio.vercel.app/"
               stack={["react", "next", "tailwindcss"]}
+              id="2"
             />
           </div>
           <div className="w-full h-fit lg:h-[28rem] flex flex-col lg:flex-row justify-center items-center lg:space-x-8 space-y-4 lg:space-y-0 mb-4 lg:mb-8">
@@ -79,6 +110,7 @@ const Work = () => {
               img="/images/gm.png"
               url="https://goodmorning-rouge.vercel.app/"
               stack={["react", "next", "tailwindcss", "moralis"]}
+              id="3"
             />
             <Project
               sub="Gallery"
@@ -87,10 +119,11 @@ const Work = () => {
               img="/images/rick.jpeg"
               url="https://rick-morty-gallery.vercel.app/"
               stack={["next", "tailwindcss", "apollo", "zustand"]}
+              id="4"
             />
           </div>
           <div className="w-full h-fit lg:h-[28rem] flex flex-col lg:flex-row justify-center items-center lg:space-x-8 space-y-4 lg:space-y-0">
-            <Project sub="Web3 Game" header="" locked stack={[]} />
+            <Project sub="Web3 Game" header="" locked stack={[]} id="5" />
           </div>
         </div>
       </div>
