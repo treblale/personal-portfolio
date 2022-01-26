@@ -85,7 +85,7 @@ const Work = () => {
               header="Rick & Morty Gallery"
               desc="Gallery of all characters from the TV series, Rick and Morty."
               img="/images/rick.jpeg"
-              url="https://enigma-portfolio.vercel.app/"
+              url="https://rick-morty-gallery.vercel.app/"
               stack={["next", "tailwindcss", "apollo", "zustand"]}
             />
           </div>
