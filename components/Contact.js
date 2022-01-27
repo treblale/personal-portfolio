@@ -29,7 +29,7 @@ const Contact = () => {
     <Section>
       <div
         name="Contact"
-        className="w-full min-h-screen flex flex-col justify-center items-center relative px-16 lg:px-0  selection:bg-primary selection:text-black"
+        className="w-full min-h-screen flex flex-col justify-center items-center relative px-16 lg:px-0 selection:bg-primary selection:text-black"
       >
         <FaTelegramPlane className="text-primary text-4xl lg:text-6xl mb-4" />
         <div className="overflow-hidden h-fit w-full text-center" ref={ref}>
