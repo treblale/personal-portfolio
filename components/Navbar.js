@@ -68,20 +68,7 @@ const Navbar = () => {
           <ul className="space-x-10 text-secondary text-sm">
             <li className="inline">
               <Link
-                className="cursor-pointer rounded-full py-1 px-2 hover:text-white/50"
-                to="About"
-                smooth={true}
-                duration={800}
-                spy
-                exact="true"
-                offset={0}
-              >
-                About
-              </Link>
-            </li>
-            <li className="inline">
-              <Link
-                className="cursor-pointer rounded-full py-1 px-2 hover:text-white/50"
+                className="cursor-pointer rounded-lg py-1 px-2 hover:text-white/50"
                 to="Work"
                 smooth={true}
                 duration={800}
@@ -94,7 +81,20 @@ const Navbar = () => {
             </li>
             <li className="inline">
               <Link
-                className="cursor-pointer rounded-full py-1 px-2 hover:text-white/50"
+                className="cursor-pointer rounded-lg py-1 px-2 hover:text-white/50"
+                to="About"
+                smooth={true}
+                duration={800}
+                spy
+                exact="true"
+                offset={0}
+              >
+                About
+              </Link>
+            </li>
+            <li className="inline">
+              <Link
+                className="cursor-pointer rounded-lg py-1 px-2 hover:text-white/50"
                 to="Contact"
                 smooth={true}
                 duration={800}
@@ -111,7 +111,7 @@ const Navbar = () => {
       </div>
       <div className="hidden lg:flex fixed left-12 bottom-12 flex-col justify-center items-start space-y-8 z-50">
         <a
-          className="p-2 rounded-full cursor-pointer group"
+          className="p-2 rounded-lg cursor-pointer group"
           target="_blank"
           rel="noopener noreferrer"
           href="https://github.com/treblale"
@@ -119,7 +119,7 @@ const Navbar = () => {
           <FiGithub className="text-secondary text-xl group-hover:text-white/50" />
         </a>
         <a
-          className="p-2 rounded-full cursor-pointer group"
+          className="p-2 rounded-lg cursor-pointer group"
           target="_blank"
           rel="noopener noreferrer"
           href="https://linkedin.com/"
@@ -127,7 +127,7 @@ const Navbar = () => {
           <FiLinkedin className="text-secondary text-xl  group-hover:text-white/50" />
         </a>
         <a
-          className="p-2 rounded-full cursor-pointer flex flex-row justify-center items-center relative hover:border-white/10 border-transparent border-[1px] group space-x-2"
+          className="p-2 rounded-lg cursor-pointer flex flex-row justify-center items-center relative hover:border-white/10 border-transparent border-[1px] group space-x-2"
           onClick={() => copyCliboard()}
         >
           <FiMail className="text-secondary text-xl  group-hover:text-white/50" />

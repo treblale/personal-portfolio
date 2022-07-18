@@ -3,8 +3,11 @@
 @tailwind utilities;
 
 @layer base {
-  p,
-  h1 {
+  p {
     @apply selection:bg-primary selection:text-black;
+  }
+
+  h1 {
+    @apply selection:bg-primary selection:text-black font-extrabold;
   }
 }

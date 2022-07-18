@@ -2,12 +2,12 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: "Poppins", sans-serif;
-  background-color: #1a1a1a;
+  font-family: "Inter", sans-serif;
+  background-color: #000000;
 }
 
 h1 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 a {

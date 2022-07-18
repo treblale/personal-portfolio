@@ -55,7 +55,7 @@ const Tech = () => {
         <div className="flex flex-col justify-center items-center">
           <div className="overflow-hidden h-fit mb-2 my-8">
             <motion.h1
-              className="font-bold text-white text-4xl lg:text-6xl text-center"
+              className="font-bold text-white text-3xl lg:text-5xl text-center"
               variants={container}
               ref={ref}
               initial="hidden"

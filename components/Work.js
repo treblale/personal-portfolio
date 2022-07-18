@@ -25,8 +25,8 @@ const Project = ({ sub, header, desc, img, locked, url, stack, id }) => {
       rel="noopener noreferrer"
       className={`${
         locked
-          ? "w-80 lg:w-[28rem] h-full flex flex-col justify-center items-start border-2 border-light p-8 rounded-lg hover:bg-white/10 hover:border-primary/50 lg:hover:shadow-lg  lg:hover:-translate-y-2 transition duration-300 ease-in cursor-not-allowed"
-          : "w-80 lg:w-[28rem] h-full flex flex-col justify-center items-start border-2 border-light p-8 rounded-lg hover:bg-white/10 hover:border-primary/50 lg:hover:shadow-lg lg:hover:-translate-y-2 transition duration-300 ease-in cursor-pointer"
+          ? "w-80 lg:w-[28rem] h-full flex flex-col justify-center items-start ring-1 ring-light p-8 rounded-lg hover:bg-white/10 hover:ring-primary/50 lg:hover:shadow-lg  lg:hover:-translate-y-2 transition duration-300 ease-in cursor-not-allowed"
+          : "w-80 lg:w-[28rem] h-full flex flex-col justify-center items-start ring-1 ring-light p-8 rounded-lg hover:bg-white/10 hover:ring-primary/50 lg:hover:shadow-lg lg:hover:-translate-y-2 transition duration-300 ease-in cursor-pointer"
       }`}
     >
       <p className="text-primary text-xs lg:text-sm mb-1">{sub}</p>

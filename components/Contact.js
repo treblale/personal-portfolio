@@ -31,10 +31,10 @@ const Contact = () => {
         name="Contact"
         className="w-full min-h-screen flex flex-col justify-center items-center relative px-16 lg:px-0 selection:bg-primary selection:text-black"
       >
-        <FaTelegramPlane className="text-primary text-4xl lg:text-6xl mb-4" />
+        <FaTelegramPlane className="text-primary text-3xl lg:text-5xl mb-4" />
         <div className="overflow-hidden h-fit w-full text-center" ref={ref}>
           <motion.h1
-            className="text-white text-4xl lg:text-6xl font-bold"
+            className="text-white text-3xl lg:text-5xl font-bold"
             variants={container}
             initial="hidden"
             animate={controls}
@@ -43,7 +43,7 @@ const Contact = () => {
           </motion.h1>
         </div>
         <p className="text-white/50 mt-2 mb-8 text-xs text-center lg:text-base lg:mb-12">
-          Shoot me an email! I am always open to new opprotunities.
+          Shoot me an email! I am always open to new opportunities.
         </p>
         <a
           className="border-white/20 border px-12 py-3 rounded-full cursor-pointer hover:bg-white/10"
