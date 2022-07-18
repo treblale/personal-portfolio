@@ -50,7 +50,7 @@ const Navbar = () => {
         set={setMessage}
       />
       <div className={`${bg} ${always} ${side}`}>
-        <div className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-300 to-purple-400 font-black text-4xl">
+        <div className="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-primary font-black text-4xl">
           A
         </div>
         <div
@@ -65,7 +65,7 @@ const Navbar = () => {
           />
         </div>
         <div className="hidden flex-row justify-center items-center space-x-10 lg:flex selection:bg-primary selection:text-black">
-          <ul className="space-x-10 text-secondary text-sm">
+          <ul className="space-x-10 text-white text-sm">
             <li className="inline">
               <Link
                 className="cursor-pointer rounded-lg py-1 px-2 hover:text-light"
@@ -116,7 +116,7 @@ const Navbar = () => {
           rel="noopener noreferrer"
           href="https://github.com/treblale"
         >
-          <FiGithub className="text-secondary text-xl group-hover:text-light" />
+          <FiGithub className="text-white text-xl group-hover:text-light" />
         </a>
         <a
           className="p-2 rounded-lg cursor-pointer group"
@@ -124,13 +124,13 @@ const Navbar = () => {
           rel="noopener noreferrer"
           href="https://linkedin.com/"
         >
-          <FiLinkedin className="text-secondary text-xl  group-hover:text-light" />
+          <FiLinkedin className="text-white text-xl  group-hover:text-light" />
         </a>
         <a
           className="p-2 rounded-lg cursor-pointer flex flex-row justify-center items-center relative hover:border-white/10 border-transparent border-[1px] group space-x-2"
           onClick={() => copyCliboard()}
         >
-          <FiMail className="text-secondary text-xl  group-hover:text-light" />
+          <FiMail className="text-white text-xl  group-hover:text-light" />
           <p className="top-2.5 left-10 text-xs text-white hidden group-hover:inline">
             albertphongle@gmail.com
           </p>

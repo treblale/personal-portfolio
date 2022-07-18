@@ -52,13 +52,16 @@ const Tech = () => {
   return (
     <Section>
       <div className="w-full h-fit flex flex-col justify-center items-center relative">
+        <div className="absolute blur-[100px]  flex flex-row">
+          <div className="w-[44rem] h-[24rem] rounded-full bg-gradient-to-r from-primary/50 to-secondary/50 opacity-40" />
+        </div>
         <div className="flex flex-col justify-center items-center">
           <p className="text-light text-xs lg:text-sm uppercase font-semibold tracking-widest">
             Technologies
           </p>
           <div className="overflow-hidden h-fit my-4">
             <motion.h1
-              className="font-bold text-white text-3xl lg:text-5xl text-center"
+              className="font-bold text-white text-3xl lg:text-4xl text-center"
               variants={container}
               ref={ref}
               initial="hidden"
@@ -68,7 +71,7 @@ const Tech = () => {
             </motion.h1>
           </div>
           <p className="text-light mb-4 lg:mb-12 text-sm lg:text-lg font-base">
-            Recent technologies that I have learned and used.
+            Recent technologies that I have worked with.
           </p>
           <motion.div
             className="w-full flex flex-wrap lg:flex-nowrap lg:flex-row justify-center items-center lg:space-x-12 mb-4"
@@ -78,47 +81,47 @@ const Tech = () => {
             animate={controls}
           >
             <motion.div
-              className="rounded-full p-6 hover:shadow-lg hover:scale-110 transition-all group"
+              className="rounded-full p-6 hover:shadow-lg hover:scale-110 transition-all group bg-gradient-to-br  "
               variants={items}
             >
-              <SiJava className="text-white/50 lg:text-5xl text-4xl group-hover:text-primary" />
+              <SiJava className="text-light lg:text-4xl text-4xl group-hover:text-primary" />
             </motion.div>
             <motion.div
-              className="rounded-full p-6 hover:shadow-lg hover:scale-110 transition-all group"
+              className="rounded-full p-6 bg-gradient-to-br   hover:shadow-lg hover:scale-110 transition-all group"
               variants={items}
             >
-              <SiJavascript className="text-white/50 lg:text-5xl text-4xl group-hover:text-primary" />
+              <SiJavascript className="text-light lg:text-4xl text-4xl group-hover:text-primary" />
             </motion.div>
             <div className="w-full lg:hidden"></div>
             <motion.div
-              className="rounded-full p-6 hover:shadow-lg hover:scale-110 transition-all group"
+              className="rounded-full p-6 bg-gradient-to-br   hover:shadow-lg hover:scale-110 transition-all group"
               variants={items}
             >
-              <FaReact className="text-white/50 lg:text-5xl text-4xl group-hover:text-primary" />
+              <FaReact className="text-light lg:text-4xl text-4xl group-hover:text-primary" />
             </motion.div>
             <motion.div
-              className="rounded-full p-6 hover:shadow-lg hover:scale-110 transition-all group"
+              className="rounded-full p-6 bg-gradient-to-br   hover:shadow-lg hover:scale-110 transition-all group"
               variants={items}
             >
-              <SiNextdotjs className="text-white/50 lg:text-5xl text-4xl group-hover:text-primary" />
+              <SiNextdotjs className="text-light lg:text-4xl text-4xl group-hover:text-primary" />
             </motion.div>
             <motion.div
-              className="rounded-full p-6 hover:shadow-lg hover:scale-110 transition-all group"
+              className="rounded-full p-6 bg-gradient-to-br   hover:shadow-lg hover:scale-110 transition-all group"
               variants={items}
             >
-              <FaHtml5 className="text-white/50 lg:text-5xl text-4xl group-hover:text-primary" />
+              <FaHtml5 className="text-light lg:text-4xl text-4xl group-hover:text-primary" />
             </motion.div>
             <motion.div
-              className="rounded-full p-6 hover:shadow-lg hover:scale-110 transition-all group"
+              className="rounded-full p-6 bg-gradient-to-br   hover:shadow-lg hover:scale-110 transition-all group"
               variants={items}
             >
-              <SiTailwindcss className="text-white/50 lg:text-5xl text-4xl group-hover:text-primary" />
+              <SiTailwindcss className="text-light lg:text-4xl text-4xl group-hover:text-primary" />
             </motion.div>
             <motion.div
-              className="rounded-full p-6 hover:shadow-lg hover:scale-110 transition-all group"
+              className="rounded-full p-6 bg-gradient-to-br   hover:shadow-lg hover:scale-110 transition-all group"
               variants={items}
             >
-              <SiStyledcomponents className="text-white/50 lg:text-5xl text-4xl group-hover:text-primary" />
+              <SiStyledcomponents className="text-light lg:text-4xl text-4xl group-hover:text-primary" />
             </motion.div>
           </motion.div>
         </div>

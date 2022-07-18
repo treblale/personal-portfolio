@@ -25,9 +25,9 @@ const Project = ({ sub, header, desc, img, locked, url, stack, id }) => {
       rel="noopener noreferrer"
       className={`${
         locked
-          ? "w-80 lg:w-[28rem] h-full flex flex-col justify-center items-start ring-1 ring-light p-8 rounded-lg hover:bg-white/10 hover:ring-primary/50 lg:hover:shadow-lg  lg:hover:-translate-y-2 transition duration-300 ease-in cursor-not-allowed "
-          : "w-80 lg:w-[28rem] h-full flex flex-col justify-center items-start ring-1 ring-light p-8 rounded-lg hover:bg-white/10 hover:ring-primary/50 lg:hover:shadow-lg lg:hover:-translate-y-2 transition duration-300 ease-in cursor-pointer"
-      }`}
+          ? "w-80 lg:w-[28rem] h-full flex flex-col justify-center items-start border-[1px] border-white/10 bg-medium p-8 rounded-lg hover:bg-white/10 hover:ring-primary/50 lg:hover:shadow-lg  lg:hover:-translate-y-2 transition duration-300 ease-in cursor-not-allowed "
+          : "w-80 lg:w-[28rem] h-full flex flex-col justify-center items-start border-[1px] border-white/10 bg-medium p-8 rounded-lg hover:bg-white/10 hover:ring-primary/50 lg:hover:shadow-lg lg:hover:-translate-y-2 transition duration-300 ease-in cursor-pointer"
+      } shadow-md shadow-white/10`}
     >
       <p className="text-primary text-sm lg:text-sm mb-1">{sub}</p>
       <h1 className="font-bold text-2xl lg:text-3xl text-white mb-1">
@@ -35,7 +35,7 @@ const Project = ({ sub, header, desc, img, locked, url, stack, id }) => {
       </h1>
       <p className="text-light mb-4 text-sm lg:text-lg">{desc}</p>
       {locked ? (
-        <div className="bg-gradient-to-r from-indigo-300 to-purple-400 rounded-lg w-full h-52 flex justify-center items-center shadow-lg">
+        <div className="bg-gradient-to-r from-secondary to-primary rounded-lg w-full h-52 flex justify-center items-center shadow-lg">
           <div className="flex flex-row items-center justify-center space-x-2">
             <IoIosLock className="text-white text-sm lg:text-lg" />
             <p className="text-white text-sm lg:text-sm">Awaiting Release</p>

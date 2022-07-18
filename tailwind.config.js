@@ -4,10 +4,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#be84fc",
-        secondary: "#ffffff",
+        primary: "#ac85fe",
+        secondary: "#fdbd83",
         dark: "#1a1a1a",
         light: "#888888",
+        medium: "#111111",
       },
       animation: {
         "gradient-x": "gradient-x 15s ease infinite",

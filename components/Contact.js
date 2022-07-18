@@ -51,7 +51,7 @@ const Contact = () => {
           rel="noopener noreferrer"
           href="mailto:albertphongle@gmail.com"
         >
-          <div className="text-sm font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-300 to-purple-400">
+          <div className="text-sm font-bold text-transparent bg-clip-text bg-gradient-to-r from-secondary to-primary">
             Say Hello
           </div>
         </a>

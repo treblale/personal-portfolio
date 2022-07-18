@@ -75,7 +75,7 @@ const About = () => {
           </p>
         </div>
         <motion.div
-          className="hidden lg:flex justify-center items-center rounded-full  shadow-lg p-8"
+          className="hidden lg:flex justify-center items-center rounded-lg  border-[1px] border-white/10 bg-medium shadow-lg shadow-white/10 p-8"
           variants={image}
           initial="hidden"
           animate={controls}
