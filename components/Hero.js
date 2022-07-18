@@ -13,7 +13,7 @@ const Hero = () => {
           <div className="w-[24rem] h-[30rem] bg-gradient-to-tl to-white/50 from-secondary/50 opacity-40" />
         </div>
         <div className="flex flex-col justify-center items-center px-16 lg:px-32 z-10">
-          <h1 className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-secondary to-primary text-5xl lg:text-9xl animate-gradient-x">
+          <h1 className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-secondary to-primary text-5xl lg:text-9xl animate-gradient-x">
             Albert Le
           </h1>
           <p className="text-light text-sm lg:text-xl tracking mb-8 mt-2 lg:mb-12">
