@@ -34,7 +34,7 @@ const Contact = () => {
         <FaTelegramPlane className="text-primary text-3xl lg:text-5xl" />
         <div className="overflow-hidden h-fit w-full text-center" ref={ref}>
           <motion.h1
-            className="text-white text-3xl lg:text-5xl font-bold my-4"
+            className="text-white text-3xl lg:text-5xl font-bold my-6"
             variants={container}
             initial="hidden"
             animate={controls}

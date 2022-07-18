@@ -99,7 +99,7 @@ const Work = () => {
               Projects
             </p>
             <motion.h1
-              className="font-bold text-white text-3xl lg:text-5xl my-4"
+              className="font-bold text-white text-3xl lg:text-5xl my-6"
               variants={container}
               initial="hidden"
               animate={controls}

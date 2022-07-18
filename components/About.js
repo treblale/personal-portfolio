@@ -54,9 +54,9 @@ const About = () => {
           <p className="text-light text-xs lg:text-sm uppercase font-semibold tracking-widest	">
             Background
           </p>
-          <div className="overflow-hidden h-fit mb-4 w-full" ref={ref}>
+          <div className="overflow-hidden h-fit w-full" ref={ref}>
             <motion.h1
-              className="font-bold text-white text-3xl lg:text-5xl my-4"
+              className="font-bold text-white text-3xl lg:text-5xl my-6"
               variants={container}
               initial="hidden"
               animate={controls}

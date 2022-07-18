@@ -59,9 +59,9 @@ const Tech = () => {
           <p className="text-light text-xs lg:text-sm uppercase font-semibold tracking-widest">
             Technologies
           </p>
-          <div className="overflow-hidden h-fit my-4">
+          <div className="overflow-hidden h-fit my-6">
             <motion.h1
-              className="font-bold text-white text-3xl lg:text-4xl text-center"
+              className="font-bold text-white text-3xl lg:text-5xl text-center"
               variants={container}
               ref={ref}
               initial="hidden"
