@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <Section>
       <div className="w-full min-h-screen flex flex-row justify-center items-center relative">
-        <div className="absolute blur-[100px]  flex flex-row space-x-24">
+        <div className="absolute blur-[100px]  md:flex flex-row space-x-24 hidden ">
           <div className="w-[24rem] h-[30rem] bg-gradient-to-tr to-white/50 from-primary/50 opacity-40" />
           <div className="w-[24rem] h-[30rem] bg-gradient-to-tl to-white/50 from-secondary/50 opacity-40" />
         </div>

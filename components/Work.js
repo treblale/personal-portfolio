@@ -108,7 +108,7 @@ const Work = () => {
             </motion.h1>
           </div>
           <div className="w-full h-fit lg:h-[28rem] flex flex-col lg:flex-row justify-center items-center lg:space-x-8 space-y-4 lg:space-y-0 mb-4 lg:mb-8">
-            <Project
+            {/* <Project
               sub="Non-fungible Token"
               header="Haywire Wolves"
               desc="5,555 unique characters stored on the Ethereum blockchain."
@@ -116,25 +116,34 @@ const Work = () => {
               url="https://haywire-web.vercel.app/"
               stack={["react", "next", "tailwindcss", "solidity"]}
               id="1"
+            /> */}
+            <Project
+              sub="Gallery"
+              header="NFT Gallery"
+              desc="Explore other's NFT collections on the Ethereum network."
+              img="/images/gallery.png"
+              url="https://nft-gallery-pi.vercel.app/"
+              stack={["react", "next", "tailwindcss"]}
+              id="1"
             />
             <Project
-              sub="Team Portfolio"
-              header="Enigma Labs"
-              desc="Agile development teams for Web3 projects."
-              img="/images/enigma.jpeg"
-              url="https://enigma-portfolio.vercel.app/"
+              sub="Dashboard"
+              header="Crypto Dashboard"
+              desc="Price-tracking app for cryptocurrencies."
+              img="/images/dashboard.png"
+              url="https://crypto-dashboard-kohl.vercel.app/"
               stack={["react", "next", "tailwindcss"]}
               id="2"
             />
           </div>
           <div className="w-full h-fit lg:h-[28rem] flex flex-col lg:flex-row justify-center items-center lg:space-x-8 space-y-4 lg:space-y-0 mb-4 lg:mb-8">
             <Project
-              sub="Web3 App"
-              header="Good Morning"
-              desc="Good Morning chat application that implements Web3 wallets."
-              img="/images/gm.png"
-              url="https://goodmorning-rouge.vercel.app/"
-              stack={["react", "next", "tailwindcss", "moralis"]}
+              sub="Team Portfolio"
+              header="ZKRLabs"
+              desc="Agile development teams for Web3 projects."
+              img="/images/zkr.jpeg"
+              url="https://www.zkrlabs.com/"
+              stack={["react", "next", "tailwindcss"]}
               id="3"
             />
             <Project
@@ -147,9 +156,9 @@ const Work = () => {
               id="4"
             />
           </div>
-          <div className="w-full h-fit lg:h-[28rem] flex flex-col lg:flex-row justify-center items-center lg:space-x-8 space-y-4 lg:space-y-0">
+          {/* <div className="w-full h-fit lg:h-[28rem] flex flex-col lg:flex-row justify-center items-center lg:space-x-8 space-y-4 lg:space-y-0">
             <Project sub="Web3 Game" header="" locked stack={[]} id="5" />
-          </div>
+          </div> */}
         </motion.div>
       </div>
     </Section>

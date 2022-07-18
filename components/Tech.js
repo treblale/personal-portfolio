@@ -52,7 +52,7 @@ const Tech = () => {
   return (
     <Section>
       <div className="w-full h-fit flex flex-col justify-center items-center relative">
-        <div className="absolute blur-[100px]  flex flex-row">
+        <div className="absolute blur-[100px]  md:flex flex-row hidden">
           <div className="w-[44rem] h-[24rem] rounded-full bg-gradient-to-r from-primary/50 to-secondary/50 opacity-40" />
         </div>
         <div className="flex flex-col justify-center items-center z-50">
