@@ -53,7 +53,10 @@ const Tech = () => {
     <Section>
       <div className="w-full h-fit flex flex-col justify-center items-center relative">
         <div className="flex flex-col justify-center items-center">
-          <div className="overflow-hidden h-fit mb-2 my-8">
+          <p className="text-light text-xs lg:text-sm uppercase font-semibold tracking-widest">
+            Technologies
+          </p>
+          <div className="overflow-hidden h-fit my-4">
             <motion.h1
               className="font-bold text-white text-3xl lg:text-5xl text-center"
               variants={container}
@@ -64,7 +67,7 @@ const Tech = () => {
               Tech Stack
             </motion.h1>
           </div>
-          <p className="text-white/50 mb-4 lg:mb-12 text-xs lg:text-base">
+          <p className="text-light mb-4 lg:mb-12 text-sm lg:text-lg font-base">
             Recent technologies that I have learned and used.
           </p>
           <motion.div
@@ -75,44 +78,44 @@ const Tech = () => {
             animate={controls}
           >
             <motion.div
-              className="rounded-full p-6 hover:bg-light hover:shadow-lg hover:scale-110 transition-all group"
+              className="rounded-full p-6 hover:shadow-lg hover:scale-110 transition-all group"
               variants={items}
             >
               <SiJava className="text-white/50 lg:text-5xl text-4xl group-hover:text-primary" />
             </motion.div>
             <motion.div
-              className="rounded-full p-6 hover:bg-light hover:shadow-lg hover:scale-110 transition-all group"
+              className="rounded-full p-6 hover:shadow-lg hover:scale-110 transition-all group"
               variants={items}
             >
               <SiJavascript className="text-white/50 lg:text-5xl text-4xl group-hover:text-primary" />
             </motion.div>
             <div className="w-full lg:hidden"></div>
             <motion.div
-              className="rounded-full p-6 hover:bg-light hover:shadow-lg hover:scale-110 transition-all group"
+              className="rounded-full p-6 hover:shadow-lg hover:scale-110 transition-all group"
               variants={items}
             >
               <FaReact className="text-white/50 lg:text-5xl text-4xl group-hover:text-primary" />
             </motion.div>
             <motion.div
-              className="rounded-full p-6 hover:bg-light hover:shadow-lg hover:scale-110 transition-all group"
+              className="rounded-full p-6 hover:shadow-lg hover:scale-110 transition-all group"
               variants={items}
             >
               <SiNextdotjs className="text-white/50 lg:text-5xl text-4xl group-hover:text-primary" />
             </motion.div>
             <motion.div
-              className="rounded-full p-6 hover:bg-light hover:shadow-lg hover:scale-110 transition-all group"
+              className="rounded-full p-6 hover:shadow-lg hover:scale-110 transition-all group"
               variants={items}
             >
               <FaHtml5 className="text-white/50 lg:text-5xl text-4xl group-hover:text-primary" />
             </motion.div>
             <motion.div
-              className="rounded-full p-6 hover:bg-light hover:shadow-lg hover:scale-110 transition-all group"
+              className="rounded-full p-6 hover:shadow-lg hover:scale-110 transition-all group"
               variants={items}
             >
               <SiTailwindcss className="text-white/50 lg:text-5xl text-4xl group-hover:text-primary" />
             </motion.div>
             <motion.div
-              className="rounded-full p-6 hover:bg-light hover:shadow-lg hover:scale-110 transition-all group"
+              className="rounded-full p-6 hover:shadow-lg hover:scale-110 transition-all group"
               variants={items}
             >
               <SiStyledcomponents className="text-white/50 lg:text-5xl text-4xl group-hover:text-primary" />

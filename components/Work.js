@@ -25,20 +25,20 @@ const Project = ({ sub, header, desc, img, locked, url, stack, id }) => {
       rel="noopener noreferrer"
       className={`${
         locked
-          ? "w-80 lg:w-[28rem] h-full flex flex-col justify-center items-start ring-1 ring-light p-8 rounded-lg hover:bg-white/10 hover:ring-primary/50 lg:hover:shadow-lg  lg:hover:-translate-y-2 transition duration-300 ease-in cursor-not-allowed"
+          ? "w-80 lg:w-[28rem] h-full flex flex-col justify-center items-start ring-1 ring-light p-8 rounded-lg hover:bg-white/10 hover:ring-primary/50 lg:hover:shadow-lg  lg:hover:-translate-y-2 transition duration-300 ease-in cursor-not-allowed "
           : "w-80 lg:w-[28rem] h-full flex flex-col justify-center items-start ring-1 ring-light p-8 rounded-lg hover:bg-white/10 hover:ring-primary/50 lg:hover:shadow-lg lg:hover:-translate-y-2 transition duration-300 ease-in cursor-pointer"
       }`}
     >
-      <p className="text-primary text-xs lg:text-sm mb-1">{sub}</p>
-      <h1 className="font-bold text-2xl lg:text-4xl text-white mb-1">
+      <p className="text-primary text-sm lg:text-sm mb-1">{sub}</p>
+      <h1 className="font-bold text-2xl lg:text-3xl text-white mb-1">
         {header}
       </h1>
-      <p className="text-white/50 mb-4 text-sm lg:text-base">{desc}</p>
+      <p className="text-light mb-4 text-sm lg:text-lg">{desc}</p>
       {locked ? (
         <div className="bg-gradient-to-r from-indigo-300 to-purple-400 rounded-lg w-full h-52 flex justify-center items-center shadow-lg">
           <div className="flex flex-row items-center justify-center space-x-2">
             <IoIosLock className="text-white text-sm lg:text-lg" />
-            <p className="text-white text-xs lg:text-sm">Awaiting Release</p>
+            <p className="text-white text-sm lg:text-sm">Awaiting Release</p>
           </div>
         </div>
       ) : (
@@ -47,7 +47,7 @@ const Project = ({ sub, header, desc, img, locked, url, stack, id }) => {
       <div className="w-full flex-row flex space-x-2 items-center justify-start mt-4">
         {stack.map((tech) => {
           return (
-            <div className="text-white/80 w-fit p-2 rounded-md bg-light text-xs">
+            <div className="text-white/80 w-fit p-2 rounded-md bg-light text-sm">
               {tech}
             </div>
           );
@@ -94,14 +94,17 @@ const Work = () => {
           initial="hidden"
           animate={controls}
         >
-          <div className="overflow-hidden h-fit mb-8 lg:mb-12">
+          <div className="overflow-hidden h-fit mb-8 lg:mb-12 text-center items-center justify-center">
+            <p className="text-light text-xs lg:text-sm uppercase font-semibold tracking-widest	">
+              Projects
+            </p>
             <motion.h1
-              className="font-bold text-white text-4xl lg:text-6xl"
+              className="font-bold text-white text-3xl lg:text-5xl my-4"
               variants={container}
               initial="hidden"
               animate={controls}
             >
-              Work
+              Previous Work
             </motion.h1>
           </div>
           <div className="w-full h-fit lg:h-[28rem] flex flex-col lg:flex-row justify-center items-center lg:space-x-8 space-y-4 lg:space-y-0 mb-4 lg:mb-8">

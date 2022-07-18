@@ -68,7 +68,7 @@ const Navbar = () => {
           <ul className="space-x-10 text-secondary text-sm">
             <li className="inline">
               <Link
-                className="cursor-pointer rounded-lg py-1 px-2 hover:text-white/50"
+                className="cursor-pointer rounded-lg py-1 px-2 hover:text-light"
                 to="Work"
                 smooth={true}
                 duration={800}
@@ -81,7 +81,7 @@ const Navbar = () => {
             </li>
             <li className="inline">
               <Link
-                className="cursor-pointer rounded-lg py-1 px-2 hover:text-white/50"
+                className="cursor-pointer rounded-lg py-1 px-2 hover:text-light"
                 to="About"
                 smooth={true}
                 duration={800}
@@ -94,7 +94,7 @@ const Navbar = () => {
             </li>
             <li className="inline">
               <Link
-                className="cursor-pointer rounded-lg py-1 px-2 hover:text-white/50"
+                className="cursor-pointer rounded-lg py-1 px-2 hover:text-light"
                 to="Contact"
                 smooth={true}
                 duration={800}
@@ -116,7 +116,7 @@ const Navbar = () => {
           rel="noopener noreferrer"
           href="https://github.com/treblale"
         >
-          <FiGithub className="text-secondary text-xl group-hover:text-white/50" />
+          <FiGithub className="text-secondary text-xl group-hover:text-light" />
         </a>
         <a
           className="p-2 rounded-lg cursor-pointer group"
@@ -124,13 +124,13 @@ const Navbar = () => {
           rel="noopener noreferrer"
           href="https://linkedin.com/"
         >
-          <FiLinkedin className="text-secondary text-xl  group-hover:text-white/50" />
+          <FiLinkedin className="text-secondary text-xl  group-hover:text-light" />
         </a>
         <a
           className="p-2 rounded-lg cursor-pointer flex flex-row justify-center items-center relative hover:border-white/10 border-transparent border-[1px] group space-x-2"
           onClick={() => copyCliboard()}
         >
-          <FiMail className="text-secondary text-xl  group-hover:text-white/50" />
+          <FiMail className="text-secondary text-xl  group-hover:text-light" />
           <p className="top-2.5 left-10 text-xs text-white hidden group-hover:inline">
             albertphongle@gmail.com
           </p>

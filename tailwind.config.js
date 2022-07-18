@@ -7,7 +7,7 @@ module.exports = {
         primary: "#be84fc",
         secondary: "#ffffff",
         dark: "#1a1a1a",
-        light: "#828282",
+        light: "#888888",
       },
       animation: {
         "gradient-x": "gradient-x 15s ease infinite",
