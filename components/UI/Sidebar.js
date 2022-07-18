@@ -9,7 +9,7 @@ const Sidebar = ({ open, setOpen }) => {
 
   const sidebar = open ? "opacity-100" : "opacity-0 invisible";
   const always =
-    "w-full min-h-screen flex flex-col justify-center items-center fixed bg-light/80 backdrop-blur-xl transition duration-300 ease-in z-50 lg:hidden";
+    "w-full min-h-screen flex flex-col justify-center items-center fixed bg-light/20 backdrop-blur-xl transition duration-300 ease-in z-50 lg:hidden";
 
   return (
     <div className={`${sidebar} ${always}`}>
