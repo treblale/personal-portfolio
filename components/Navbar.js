@@ -33,9 +33,9 @@ const Navbar = () => {
   // }, []);
 
   const bg = navbar ? "backdrop-blur-xl" : "bg-transparent";
-  const side = sidebar ? "fixed" : "absolute";
+  const side = sidebar ? "fixed" : "";
   const always =
-    "w-full h-min-screen flex flex-row justify-between items-center px-16 py-8 lg:px-32 z-50 transition-all overflow-hidden";
+    "w-full h-min-screen fixed flex backdrop-blur-md bg-black/20 flex-row justify-between items-center px-16 py-8 lg:px-32 z-50 transition-all overflow-hidden";
 
   const animate1 = sidebar ? "rotate-45 translate-y-1.5" : "";
   const animate2 = sidebar ? "-rotate-45 -translate-y-1" : "";
