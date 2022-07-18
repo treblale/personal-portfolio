@@ -55,7 +55,7 @@ const Tech = () => {
         <div className="absolute blur-[100px]  flex flex-row">
           <div className="w-[44rem] h-[24rem] rounded-full bg-gradient-to-r from-primary/50 to-secondary/50 opacity-40" />
         </div>
-        <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center items-center z-50">
           <p className="text-light text-xs lg:text-sm uppercase font-semibold tracking-widest">
             Technologies
           </p>
