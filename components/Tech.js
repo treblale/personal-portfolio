@@ -9,6 +9,9 @@ import {
   SiApollographql,
   SiJava,
   SiJavascript,
+  SiTypescript,
+  SiNestjs,
+  SiPrisma,
 } from "react-icons/si";
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -84,13 +87,13 @@ const Tech = () => {
               className="rounded-full p-6 hover:shadow-lg hover:scale-110 transition-all group bg-gradient-to-br  "
               variants={items}
             >
-              <SiJava className="text-light lg:text-4xl text-4xl group-hover:text-primary" />
+              <SiTypescript className="text-light lg:text-4xl text-4xl group-hover:text-primary" />
             </motion.div>
             <motion.div
               className="rounded-full p-6 bg-gradient-to-br   hover:shadow-lg hover:scale-110 transition-all group"
               variants={items}
             >
-              <SiJavascript className="text-light lg:text-4xl text-4xl group-hover:text-primary" />
+              <SiNestjs className="text-light lg:text-4xl text-4xl group-hover:text-primary" />
             </motion.div>
             <div className="w-full lg:hidden"></div>
             <motion.div
@@ -109,7 +112,7 @@ const Tech = () => {
               className="rounded-full p-6 bg-gradient-to-br   hover:shadow-lg hover:scale-110 transition-all group"
               variants={items}
             >
-              <FaHtml5 className="text-light lg:text-4xl text-4xl group-hover:text-primary" />
+              <SiPrisma className="text-light lg:text-4xl text-4xl group-hover:text-primary" />
             </motion.div>
             <motion.div
               className="rounded-full p-6 bg-gradient-to-br   hover:shadow-lg hover:scale-110 transition-all group"
@@ -121,7 +124,7 @@ const Tech = () => {
               className="rounded-full p-6 bg-gradient-to-br   hover:shadow-lg hover:scale-110 transition-all group"
               variants={items}
             >
-              <SiStyledcomponents className="text-light lg:text-4xl text-4xl group-hover:text-primary" />
+              <SiGraphql className="text-light lg:text-4xl text-4xl group-hover:text-primary" />
             </motion.div>
           </motion.div>
         </div>

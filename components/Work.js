@@ -123,7 +123,7 @@ const Work = () => {
               desc="Explore other's NFT collections on the Ethereum network."
               img="/images/gallery.png"
               url="https://nft-gallery-pi.vercel.app/"
-              stack={["react", "next", "tailwindcss"]}
+              stack={["react", "next", "tailwindcss", "alchemy"]}
               id="1"
             />
             <Project
@@ -132,7 +132,7 @@ const Work = () => {
               desc="Price-tracking app for cryptocurrencies."
               img="/images/dashboard.png"
               url="https://crypto-dashboard-kohl.vercel.app/"
-              stack={["react", "next", "tailwindcss"]}
+              stack={["react", "next", "tailwindcss", "coingecko"]}
               id="2"
             />
           </div>

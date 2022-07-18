@@ -66,12 +66,17 @@ const About = () => {
           </div>
           <p className="text-light text-left text-base lg:text-lg">
             Hello, my name is Albert Le, I am a{" "}
-            <span className="text-primary font-bold">software engineer</span>{" "}
+            <span className="text-primary font-semibold">
+              software engineer
+            </span>{" "}
             with experience in the latest web technologies. I started my journey
             as a developer back in 2020 when I found my passion for developing
-            <span className="text-primary font-bold"> web applications</span>.
-            Since then I have been continously expanding my knowledge and
-            improving my technical skills.
+            <span className="text-primary font-semibold">
+              {" "}
+              web applications
+            </span>
+            . Since then I have been continously exploring new technologies
+            while expanding my knowledge and improving my technical skills.
           </p>
         </div>
         <motion.div
