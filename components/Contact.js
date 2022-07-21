@@ -56,6 +56,7 @@ const Contact = () => {
           </div>
         </a>
       </div>
+      <div className="w-full h-16 bg-gradient-to-r from-secondary to-primary absolute bottom-0 blur-[100px] opacity-40" />
     </Section>
   );
 };
