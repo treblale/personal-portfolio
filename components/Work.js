@@ -44,7 +44,7 @@ const Project = ({ sub, header, desc, img, locked, url, stack, id }) => {
       ) : (
         <img className="object-cover rounded-lg shadow-lg" src={img} alt="" />
       )}
-      <div className="w-full flex-row flex space-x-2 items-center justify-start mt-4">
+      <div className="hidden w-full flex-row md:flex space-x-2 items-center justify-start mt-4">
         {stack.map((tech) => {
           return (
             <div className="text-white/80 w-fit p-2 rounded-md ring-1 ring-white/10 text-sm">
