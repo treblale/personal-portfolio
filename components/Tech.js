@@ -87,44 +87,44 @@ const Tech = () => {
               className="rounded-full p-6 hover:shadow-lg hover:scale-110 transition-all group bg-gradient-to-br  "
               variants={items}
             >
-              <SiTypescript className="text-light lg:text-4xl text-4xl group-hover:text-primary" />
+              <SiTypescript className="text-light lg:text-4xl text-4xl group-hover:text-white" />
             </motion.div>
             <motion.div
               className="rounded-full p-6 bg-gradient-to-br   hover:shadow-lg hover:scale-110 transition-all group"
               variants={items}
             >
-              <SiNestjs className="text-light lg:text-4xl text-4xl group-hover:text-primary" />
+              <SiNestjs className="text-light lg:text-4xl text-4xl group-hover:text-white" />
             </motion.div>
             <div className="w-full lg:hidden"></div>
             <motion.div
               className="rounded-full p-6 bg-gradient-to-br   hover:shadow-lg hover:scale-110 transition-all group"
               variants={items}
             >
-              <FaReact className="text-light lg:text-4xl text-4xl group-hover:text-primary" />
+              <FaReact className="text-light lg:text-4xl text-4xl group-hover:text-white" />
             </motion.div>
             <motion.div
               className="rounded-full p-6 bg-gradient-to-br   hover:shadow-lg hover:scale-110 transition-all group"
               variants={items}
             >
-              <SiNextdotjs className="text-light lg:text-4xl text-4xl group-hover:text-primary" />
+              <SiNextdotjs className="text-light lg:text-4xl text-4xl group-hover:text-white" />
             </motion.div>
             <motion.div
               className="rounded-full p-6 bg-gradient-to-br   hover:shadow-lg hover:scale-110 transition-all group"
               variants={items}
             >
-              <SiPrisma className="text-light lg:text-4xl text-4xl group-hover:text-primary" />
+              <SiPrisma className="text-light lg:text-4xl text-4xl group-hover:text-white" />
             </motion.div>
             <motion.div
               className="rounded-full p-6 bg-gradient-to-br   hover:shadow-lg hover:scale-110 transition-all group"
               variants={items}
             >
-              <SiTailwindcss className="text-light lg:text-4xl text-4xl group-hover:text-primary" />
+              <SiTailwindcss className="text-light lg:text-4xl text-4xl group-hover:text-white" />
             </motion.div>
             <motion.div
               className="rounded-full p-6 bg-gradient-to-br   hover:shadow-lg hover:scale-110 transition-all group"
               variants={items}
             >
-              <SiGraphql className="text-light lg:text-4xl text-4xl group-hover:text-primary" />
+              <SiGraphql className="text-light lg:text-4xl text-4xl group-hover:text-white" />
             </motion.div>
           </motion.div>
         </div>

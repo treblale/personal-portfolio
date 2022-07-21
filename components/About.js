@@ -69,14 +69,15 @@ const About = () => {
             <span className="text-primary font-semibold">
               software engineer
             </span>{" "}
-            with experience in the latest web technologies. I started my journey
-            as a developer back in 2020 when I found my passion for developing
+            with experience in the latest web technologies. I have a passion for
+            developing
             <span className="text-primary font-semibold">
               {" "}
               web applications
-            </span>
-            . Since then I have been continously exploring new technologies
-            while expanding my knowledge and improving my technical skills.
+            </span>{" "}
+            and I am always eager to explore new technologies. I have an intrest
+            in creating highly performant web applications and amazing
+            experiences for users of the web.
           </p>
         </div>
         <motion.div
